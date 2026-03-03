@@ -1,13 +1,8 @@
-/* =========================================
-   Vanilla Trade Sambava - JavaScript
-   Nature Soft Minimalist Version
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* ================================
-       1. PRELOADER - Gentle Animation
-    ================================= */
+    /*PRELOADER Animation*/
     const preloader = document.querySelector('.preloader');
     if (preloader) {
         window.addEventListener('load', () => {
@@ -18,9 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* ================================
-       2. Smooth Scroll
-    ================================= */
+    /*Smooth Scroll*/
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             const targetId = this.getAttribute("href");
@@ -40,9 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* ================================
-       3. Animation Fade In au scroll
-    ================================= */
+    /* Animation Fade In au scroll*/
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -30px 0px'
@@ -72,9 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* ================================
-       4. Scroll vers Contact
-    ================================= */
+    /*Scroll vers Contact*/
     window.scrollToContact = function () {
         const contact = document.getElementById("contact");
         if (contact) {
@@ -86,9 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
 
-    /* ================================
-       5. Copier numéro
-    ================================= */
+    /*Copier numéro*/
     window.copyToClipboard = function (number) {
         navigator.clipboard.writeText(number)
             .then(() => {
@@ -111,9 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
 
-    /* ================================
-       6. Navbar dynamique
-    ================================= */
+    /*Navbar dynamique*/
     const navbar = document.getElementById("navbar");
 
     window.addEventListener("scroll", () => {
@@ -127,9 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* ================================
-       7. Menu Mobile Toggle
-    ================================= */
+    /*Menu Mobile Toggle */
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
 
@@ -153,9 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* ================================
-       8. BACK TO TOP - Bouton retour en haut
-    ================================= */
+    /* BACK TO TOP - Bouton retour en haut */
     const backToTop = document.createElement('button');
     backToTop.className = 'back-to-top';
     backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
@@ -178,9 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* ================================
-       9. Compteur animé pour les prix
-    ================================= */
+    /* Compteur animé pour les prix*/
     function animatePrice(element, targetPrice) {
         const duration = 1500;
         const startTime = performance.now();
@@ -228,9 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* ================================
-       10. Effet de surlignage au scroll
-    ================================= */
+    /* Effet de surlignage au scroll*/
     const sections = document.querySelectorAll('section[id]');
 
     window.addEventListener("scroll", () => {
@@ -256,3 +233,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 console.log("Vanilla Trade JS Loaded ✓");
+
