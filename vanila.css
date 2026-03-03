@@ -1,20 +1,16 @@
-/* =========================================
-   Vanilla Trade Sambava - Nature Soft Minimalist
-   Style: Natural, Soft, Clean, Minimalist
-========================================= */
 
 :root {
-    /* Nature Soft Palette */
+    /*Palette */
     --bg-cream: #FAF9F6;
     --bg-warm: #F5F5F0;
     --bg-white: #FFFFFF;
     
-    /* Sage Green - Primary */
+    /*Primary */
     --primary: #7D8F77;
     --primary-light: #9AAB94;
     --primary-dark: #5E6F58;
     
-    /* Terracotta - Accent */
+    /*Accent */
     --accent: #A67B5B;
     --accent-light: #C49A7A;
     --accent-dark: #8B6147;
@@ -76,9 +72,7 @@ h1, h2, h3 {
     font-size: 1.05rem;
 }
 
-/* =========================================
-   PRELOADER - Soft Nature Animation
-========================================= */
+/*Animation*/
 .preloader {
     position: fixed;
     top: 0;
@@ -137,9 +131,7 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-/* =========================================
-   Organic Shapes - Background Decorations
-========================================= */
+/*Background*/
 .bg-organic {
     position: fixed;
     top: 0;
@@ -760,9 +752,7 @@ footer {
     100% { opacity: 0; }
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* RESPONSIVE */
 @media(max-width: 992px) {
     .hero-container,
     .products-grid,
@@ -861,3 +851,4 @@ footer {
         gap: 40px;
     }
 }
+
