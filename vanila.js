@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 const message = document.createElement("div");
-                message.textContent = "Numéro copié ✓";
+                message.textContent = "copié dans le presse-papiers";
                 message.classList.add("copy-feedback");
 
                 document.body.appendChild(message);
